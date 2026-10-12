@@ -26,4 +26,5 @@ jobs:
         run: mvn clean package
 
       - name: List Target Folder
+        working-directory: actions-cert-prep
         run: ls -la target
