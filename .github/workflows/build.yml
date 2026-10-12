@@ -1,5 +1,8 @@
 name: Build Java Application
 
+env:
+  APP_NAME: my-java-app
+
 on:
   push:
     branches:
@@ -34,3 +37,7 @@ jobs:
           echo "Repository: ${{ github.repository }}"
           echo "Branch: ${{ github.ref }}"
           echo "Actor: ${{ github.actor }}"
+
+      - name: Print Environment Variable
+        run: |
+          echo $APP_NAME
