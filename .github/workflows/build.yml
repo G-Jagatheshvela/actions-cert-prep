@@ -28,3 +28,9 @@ jobs:
       - name: List Target Folder
         working-directory: actions-cert-prep
         run: ls -la target
+
+      - name: Print GitHub Information
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Actor: ${{ github.actor }}"
