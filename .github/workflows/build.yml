@@ -22,6 +22,7 @@ jobs:
           java-version: 8
 
       - name: Build Project
+        working-directory: actions-cert-prep
         run: mvn clean package
 
       - name: List Target Folder
