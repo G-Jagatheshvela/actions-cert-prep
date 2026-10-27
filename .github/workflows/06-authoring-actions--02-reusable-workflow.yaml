@@ -1,0 +1,7 @@
+name: Reusable Workflow Demo
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: G-Jagatheshvela/actions-cert-prep/.github/workflows/build-deploy.yml@main
